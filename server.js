@@ -4,7 +4,7 @@ const cookieSession = require('cookie-session');
 const app = express();
 
 // Database connection
-mongoose.connect('mongodb://127.0.0.1:27017/taskmanagerDB')
+mongoose.connect('mongodb+srv://dbuser:dbuser@cluster0.la4teb0.mongodb.net/?appName=Cluster0')
     .then(() => console.log("Connected to MongoDB"))
     .catch(err => console.error("Could not connect to MongoDB", err));
 
